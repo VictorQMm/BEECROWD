@@ -9,6 +9,17 @@
 #include <stdio.h>
 
 int main(){
-
-    return 0;
+ int segundos;
+    
+ scanf("%d", &segundos);
+    
+ int hours = segundos / 3600;
+ segundos = segundos - (hours * 3600);
+    
+ int minutes = segundos / 60;
+ segundos = segundos - (minutes * 60);
+    
+ printf("%d:%d:%d\n", hours, minutes, segundos);
+    
+ return 0;
 }
