@@ -17,21 +17,26 @@ int main(){
     scanf("%d %d", &X, &Y);
 
     if (X == 1){
-        preco  = (float) (4.00 * Y);
+        preco = 4.00 * Y;
     }
     else if (X == 2){
-        preco  = (float) (4.50 * Y);
+        preco = 4.50 * Y;
     }
     else if (X == 3){
-        preco  = (float) (5.00 * Y);
+        preco = 5.00 * Y;
     }
     else if (X == 4){
-        preco  = (float) (2.00 * Y);
+        preco = 2.00 * Y;
     }
     else if (X == 5){
-        preco  = (float) (1.50 * Y);
+        preco = 1.50 * Y;
+    }
+    else {
+        printf("Código do item inválido.\n");
+        return 1;
     }
 
-    printf("Total: R$ %.2f\n",preco);
+    printf("Total: R$ %.2f\n", preco);
 
+    return 0;
 }
